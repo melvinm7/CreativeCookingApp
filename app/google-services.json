@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214476649408",
+    "project_id": "creative-cooking-dd723",
+    "storage_bucket": "creative-cooking-dd723.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214476649408:android:f4ce1ea70bf806a4de4e25",
+        "android_client_info": {
+          "package_name": "com.example.team11finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214476649408-ukib27l3bb2akfucq4eer0q5dh8482hu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_qfpg2ntHZTBgQQUs_jsBRND_97Bx-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214476649408-ukib27l3bb2akfucq4eer0q5dh8482hu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

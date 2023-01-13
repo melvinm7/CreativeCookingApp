@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/search_for_an_item_text"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:hint="@string/search_for_an_item"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        app:backgroundTint="#C51162"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/pantry_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="216dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/pantry_title_text"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/community_info_text"
+        android:layout_width="345dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/pantry_info"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantry_title_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

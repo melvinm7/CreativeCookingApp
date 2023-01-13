@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityRecipeThree">
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Ingredients:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipetitleVP" />
+
+    <TextView
+        android:id="@+id/prep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Preparation:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+    <TextView
+        android:id="@+id/recipetitleVP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Peach Crumble"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingredientsVP"
+        android:layout_width="351dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="Large Peaches Sliced - 6
+        \nWhite Sugar - 50 g
+        \nLemon Juice - 15 ml
+        \nGround Cinnamon - 1/2 tsp
+        \nGround Ginger - 1/2 tsp
+        \nSalt - 1/2 tsp
+        \nAll Purpose Flour - 200 g
+        \nBrown Sugar - 220 g packed
+        \nUnsalted Butter - 110g"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+    <TextView
+        android:id="@+id/prepVP"
+        android:layout_width="352dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:scrollbars="vertical"
+        android:text="1. Preheat oven to 375 F
+        \n2. In a large bowl, combine peaches, sugar, lemon juice, cinnamon, ginger, and salt
+        \n3. In a medium bowl, combine flour, brown sugar, salt, and cinnamon
+        \n4. Pour in melted butter and stir until mixture resembles coarse crumbs
+        \n5. Pour peaches and juices into a large baking dish
+        \n6. Sprinkle crumb topping evenly over peaches.
+        \n7. Bake until topping is golden and peaches are bubbling, 45 to 50 minutes
+        \n8.Serve warm with ice cream, if desired"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prep" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/share_recipe_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/share_your_recipe"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/share_recipe_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_your_own_recipe_to_share_with_the_community"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_recipe_textview"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/list_the_ingredients"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_recipe_description_textview"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/prep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/explain_preparation"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/diet_restrict_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/what_dietary_restrictions_does_this_recipe_meet"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prep"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <EditText
+        android:id="@+id/multi_line_text_ingredients"
+        android:layout_width="375dp"
+        android:layout_height="120dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:hint="@string/list_the_ingredients_of_your_recipe"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/prep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients"
+        app:layout_constraintVertical_bias="0.388"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/multi_line_text_preparation"
+        android:layout_width="375dp"
+        android:layout_height="175dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:hint="@string/explain_how_to_prepare_your_recipe"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/diet_restrict_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prep"
+        app:layout_constraintVertical_bias="0.344"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/search_restriction_plain_text"
+        android:layout_width="373dp"
+        android:layout_height="35dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:ems="10"
+        android:hint="@string/search_for_a_restriction"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diet_restrict_textview"
+        app:layout_constraintVertical_bias="0.096"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_restrictions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:foreground="@drawable/checkmark"
+        app:backgroundTint="@color/pink_a700"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_restriction_plain_text"
+        app:layout_constraintVertical_bias="0.9"
+        app:srcCompat="@drawable/checkmark"
+        app:tint="@color/pink_a700"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/restriction1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="test"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_restriction_plain_text"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/restriction2"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="test2"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_restriction_plain_text"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <TextView
+        android:id="@+id/restriction3"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="test3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_restriction_plain_text"
+        app:layout_constraintVertical_bias="0.197" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

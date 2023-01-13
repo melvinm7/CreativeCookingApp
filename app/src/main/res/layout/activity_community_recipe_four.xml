@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityRecipeFour">
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Ingredients:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipetitleVP" />
+
+    <TextView
+        android:id="@+id/prep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Preparation:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+    <TextView
+        android:id="@+id/recipetitleVP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Chorizo Tacos"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingredientsVP"
+        android:layout_width="352dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:text="Olive Oil - 2 tbsp
+        \nChorizo - 1lb
+        \nWhite Onion - 1 diced
+        \nCorn Tortillas - 12 count
+        \nCilantro (Optional) - 1/4 cup
+        \nLime Zest - 1/2 of a lime
+        \nLime Juice - 1/2 of a lime
+        \nSour Cream - 1/2 cup
+        \nGarlic Powder - 1/8 tsp
+        \nKosher Salt - 1/8 tsp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+    <TextView
+        android:id="@+id/prepVP"
+        android:layout_width="352dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/green_400"
+        android:ems="10"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start|top"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:scrollbars="vertical"
+        android:text="1. Combine sour cream, lime zest, lime juice, garlic powder, and kosher salt in a small bowl and stir until combined to make lime crema. Set aside
+        \n2. Heat a large skillet over medium-high heat
+        \n3. Add the chorizo and cook for 8-10 minutes, stirring occasionally, until the chorizo is completely cooked
+        \n4. While the chorizo is cooking, warm the corn tortillas in a separate hot skillet or over the open flame on a gas stove for about 30 seconds per each side until warmed through with some toasty brown spots
+        \n5. Place the tortillas in a tortilla warmer or cover in a kitchen towel to keep them warm until ready to eat
+        \n6. Fill the corn tortillas with the cooked chorizo and serve with lime crema, chopped cilantro, and diced onions"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prep" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

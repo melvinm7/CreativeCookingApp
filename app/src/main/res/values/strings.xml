@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Team11FinalProject</string>
+    <string name="card_title">title here</string>
+    <string name="card_info_placeholder">card info placeholder</string>
+
+    <string name="share_your_recipe">Share your recipe</string>
+    <string name="add_your_own_recipe_to_share_with_the_community">Add your own recipe to share with the community</string>
+    <string name="list_the_ingredients">List the ingredients:</string>
+    <string name="explain_preparation">Explain preparation:</string>
+    <string name="what_dietary_restrictions_does_this_recipe_meet">What dietary restrictions does this recipe meet?</string>
+    <string name="list_the_ingredients_of_your_recipe">List the ingredients of your recipe</string>
+    <string name="explain_how_to_prepare_your_recipe">Explain how to prepare your recipe</string>
+    <string name="search_for_a_restriction">Search for restriction</string>
+    <string name="filter_recipes">Filter recipes</string>
+    <string name="search_for_a_restriction_to_add">Search for a restriction to add</string>
+    <string name="save_filters">Save filters</string>
+    <string name="add_block">Add a new pantry item</string>
+    <string name="item_name">Item name </string>
+    <string name="quantity">Quantity (#) </string>
+    <string name="unit_ex_ml">Unit (ex. ml) </string>
+    <string name="save_pantry_item">Save pantry item </string>
+    <string name="edit_a_pantry_item_block">Edit a pantry item</string>
+    <string name="contact_name">contact name goes here</string>
+    <string name="dietary_profiles_title">Your dietary profiles</string>
+    <string name="dp_info_text">View and update profiles of previous meal guests, or add a new meal guest!</string>
+    <string name="community_recipe_title">Our community</string>
+    <string name="community_info_view">Share your recipe with the community, or check out recipes from other Creative Cooking users!</string>
+    <string name="pantry_title_text">Your pantry</string>
+    <string name="pantry_info">View your items and update quantities after a shopping trip!</string>
+    <string name="applicable_recipes_string">Applicable recipes</string>
+    <string name="applicablerec_info_string">Recipes that meet the criteria of the current meal that you’re planning.</string>
+    <string name="your_dietary_profiles">Your dietary profiles</string>
+    <string name="view_and_update_profiles_of_previous_meal_guests_or_add_a_new_meal_guest">View and update profiles of previous meal guests, or add a new meal guest!</string>
+    <string name="search_for_a_profile">Search for a profile</string>
+    <string name="plan_a_meal">Plan a meal</string>
+    <string name="add_participants">Add participants to a meal and see relevant recipes that everyone attending can enjoy!</string>
+    <string name="add_meal_participants">Add meal participants:</string>
+    <string name="search_dishes">Search for dishes to add and add them to the meal:</string>
+    <string name="this_meals_dishes">This meal dish:</string>
+    <string name="find_applicable_recipes">Find applicable recipes</string>
+    <string name="vegan_lasagna">Vegan lasagna</string>
+    <string name="apple_crumble">Apple crumble</string>
+    <string name="add_notes_meal">Add notes about this meal:</string>
+    <string name="note_about_meal">Write down your note about this meal</string>
+    <string name="dietary_profile">Dietary profile</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="add_photo">Add a photo</string>
+    <string name="select_dietary_restrictions">Select any dietary restrictions, conditions, or food preferences:</string>
+    <string name="vegan">Vegan</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="gluten_intolerant">Gluten intolerant</string>
+    <string name="pescatarian">Pescatarian</string>
+    <string name="tree_nut_allergy">Tree nut allergy</string>
+    <string name="shellfish_allergy">Shellfish allergy</string>
+    <string name="peanut_allergy">Peanut allergy</string>
+    <string name="diabetic">Diabetic</string>
+    <string name="lactose_intolerant">Lactose intolerant</string>
+    <string name="PCOS">PCOS</string>
+    <string name="dairy_allergy">Dairy allergy</string>
+    <string name="FODMAP_diet">FODMAP diet</string>
+    <string name="dislikes_seafood">Dislikes seafood</string>
+    <string name="dislikes_fried_food">Dislikes fried food</string>
+    <string name="dislikes_red_meat">Dislikes red meat</string>
+    <string name="dislikes_mayo">Dislikes mayo</string>
+    <string name="weeks_featured">This week\'s featured community recipe:</string>
+    <string name="other_community_creations">Other community creations:</string>
+    <string name="search_for_an_item">Search for an item</string>
+    <string name="vegan_pasta">Vegan pasta</string>
+    <string name="add_to_meal_button">Add to meal</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="preparations">Preparations:</string>
+    <string name="ingredients_info">Ingredients here...</string>
+    <string name="preparations_info">Steps here...</string>
+    <string name="applicable_recipes_title">Applicable recipes</string>
+    <string name="applicable_recipe_info">Recipes that meet the criteria of the current meal that you’re planning.</string>
+
+
+    <string name="allison_abbies">Allison Abbies</string>
+    <string name="greg_abbies">Greg Abbies</string>
+    <string name="everett_abbies">Everett Abbies</string>
+    <string name="jake_johnson">Jake Johnson</string>
+    <string name="dave_johnson">Dave Johnson</string>
+    <string name="yuqi_song">Yuqi Song</string>
+    <string name="ryiji_yamamoto">Ryiji Yamamoto</string>
+    <string name="allison">Allison</string>
+    <string name="greg">Greg</string>
+    <string name="everett">Everett</string>
+    <string name="abbies">Abbies</string>
+    <string name="jake">Jake</string>
+    <string name="dave">Dave</string>
+    <string name="johnson">Johnson</string>
+    <string name="yuqi">Yuqi</string>
+    <string name="song">Song</string>
+    <string name="ryiji">Ryiji</string>
+    <string name="yamamoto">Yamamoto</string>
+
+    <string-array name="card_titles">
+        <item>Access your pantry</item>
+        <item>View and update dietary profiles</item>
+        <item>Plan a meal</item>
+        <item>Our recipe community</item>
+    </string-array>
+
+    <string-array name="card_infos">
+        <item>View your pantry, or update it with any new groceries you’ve bought.</item>
+        <item>View your list of dietary profiles, update current ones with changes to dietary restrictions, or add a new dietary profile for a new meal guest!</item>
+        <item>Plan a new meal! Add your guests and see recipes that you have the ingredients for that won’t violate any guests’ dietary restrictions.</item>
+        <item>See other people’s favorite recipes, or upload and share your own for everyone else!</item>
+    </string-array>
+
+    <array name="card_icons">
+        <item>@drawable/pantry_icon</item>
+        <item>@drawable/dietary_profiles_icon</item>
+        <item>@drawable/plan_meal_icon</item>
+        <item>@drawable/community_icon</item>
+    </array>
+
+    <string-array name="ingredients">
+        <item>chicken</item>
+        <item>rice</item>
+        <item>eggs</item>
+        <item>milk</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_restrictions3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="338dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="45dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:foreground="@drawable/checkmark"
+        app:backgroundTint="@color/pink_a700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_dietary_restrictions_textview"
+        app:srcCompat="@drawable/checkmark"
+        app:tint="@color/pink_a700"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back_to_profiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="@color/pink_a700"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:foreground="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peanut_allergy_button_grey"
+        app:srcCompat="@drawable/back_button"
+        app:tint="@color/pink_a700"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dietary_profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/dietary_profile"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/first_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="101dp"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter a first name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dietary_profile_text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/last_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter a last name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name_text"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/select_dietary_restrictions_textview"
+        android:layout_width="329dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/select_dietary_restrictions"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_text" />
+
+    <!--VEGETARIAN BUTTON-->
+
+    <Button
+        android:id="@+id/vegetarian_button_grey"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Vegetarian"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_dietary_restrictions_textview" />
+
+    <Button
+        android:id="@+id/vegetarian_button_green"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Vegetarian"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_dietary_restrictions_textview" />
+
+    <!--VEGAN BUTTON-->
+
+    <Button
+        android:id="@+id/vegan_button_grey"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Vegan"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_dietary_restrictions_textview" />
+
+    <Button
+        android:id="@+id/vegan_button_green"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Vegan"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vegetarian_button_grey"
+        app:layout_constraintTop_toBottomOf="@+id/select_dietary_restrictions_textview" />
+
+    <!--SHELLFISH ALLERGY-->
+    <Button
+        android:id="@+id/shellfish_allergy_button_grey"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Shellfish allergy"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegetarian_button_grey" />
+
+    <Button
+        android:id="@+id/shellfish_allergy_button_green"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Shellfish allergy"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vegetarian_button_grey" />
+
+    <!--DIABETIC-->
+    <Button
+        android:id="@+id/diabetic_button_grey"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Diabetic"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shellfish_allergy_button_grey"
+        app:layout_constraintTop_toBottomOf="@+id/vegetarian_button_grey" />
+
+    <!--DISLIKES SHELLFISH-->
+    <Button
+        android:id="@+id/diabetic_button_green"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Diabetic"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/shellfish_allergy_button_grey"
+        app:layout_constraintTop_toBottomOf="@+id/vegetarian_button_grey" />
+
+    <Button
+        android:id="@+id/dislikes_shellfish_button_grey"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Dislikes shellfish"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shellfish_allergy_button_grey" />
+
+    <Button
+        android:id="@+id/dislikes_shellfish_button_green"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="167dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Dislikes shellfish"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shellfish_allergy_button_grey" />
+
+    <!--LACTOSE INTOLERANT-->
+    <Button
+        android:id="@+id/lactose_intolerant_button_grey"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Lactose intolerant"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dislikes_shellfish_button_grey" />
+
+    <Button
+        android:id="@+id/lactose_intolerant_button_green"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="167dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Lactose intolerant"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dislikes_shellfish_button_grey" />
+
+    <!--GLUTEN INTOLERANT-->
+    <Button
+        android:id="@+id/gluten_intolerant_button_grey"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Gluten intolerant"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lactose_intolerant_button_grey" />
+
+    <Button
+        android:id="@+id/gluten_intolerant_button_green"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="167dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Gluten intolerant"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lactose_intolerant_button_grey" />
+
+    <!--PEANUT ALLERGY-->
+    <Button
+        android:id="@+id/peanut_allergy_button_grey"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Peanut allergy"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gluten_intolerant_button_grey" />
+
+    <Button
+        android:id="@+id/peanut_allergy_button_green"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Peanut allergy"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gluten_intolerant_button_grey" />
+
+    <!--TREE NUT ALLERGY-->
+    <Button
+        android:id="@+id/tree_nut_allergy_button_grey"
+        android:layout_width="182dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Tree nut allergy"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/peanut_allergy_button_grey"
+        app:layout_constraintTop_toBottomOf="@+id/gluten_intolerant_button_grey" />
+
+    <Button
+        android:id="@+id/tree_nut_allergy_button_green"
+        android:layout_width="182dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Tree nut allergy"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/peanut_allergy_button_grey"
+        app:layout_constraintTop_toBottomOf="@+id/gluten_intolerant_button_grey" />
+
+    <!--DISLIKES RED MEAT-->
+    <Button
+        android:id="@+id/dislikes_red_meat_button_grey"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="178dp"
+        android:backgroundTint="@color/please_button_grey"
+        android:drawableRight="@drawable/button_plus"
+        android:fontFamily="@font/inter_medium"
+        android:text="Dislikes red meat"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text_grey"
+        android:textSize="13dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree_nut_allergy_button_grey" />
+
+    <Button
+        android:id="@+id/dislikes_red_meat_button_green"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="178dp"
+        android:backgroundTint="@color/green_400"
+        android:drawableRight="@drawable/button_remove"
+        android:fontFamily="@font/inter_medium"
+        android:text="Dislikes red meat"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree_nut_allergy_button_grey" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

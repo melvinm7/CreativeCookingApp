@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/green_400"
+    android:id="@+id/parent"
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_icon"
+        android:adjustViewBounds="true"
+        android:paddingTop="15dp"
+        android:paddingLeft="7dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/card_icon"
+        android:background="@color/green_400">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_title"
+            android:text="@string/card_title"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingTop="7dp"
+            android:paddingLeft="5dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            style="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subTitle"
+            android:text="@string/card_info_placeholder"
+            android:paddingTop="3dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@id/card_title"
+            android:fontFamily="@font/inter_light"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            style="@style/TextAppearance.AppCompat.Subhead" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

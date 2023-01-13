@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imgIng"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_below="@+id/edtEnterAmt"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/edtEnterAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:ems="5"
+            android:hint="Amount"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredient Name"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/txtName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measurement:"
+            android:layout_toRightOf="@id/txtAmount"
+            android:textSize="10sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txtMeasurement"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_toRightOf="@id/txtName"
+            android:textSize="10sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:id="@+id/txtAmount"/>
+
+        <ImageButton
+            android:id="@+id/btnAddIngredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/circle_add_button"
+            android:layout_below="@id/txtName"
+            android:layout_toRightOf="@+id/edtEnterAmt"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_below="@+id/txtMeasurement"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@android:drawable/ic_delete"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_200">#C5E1A5</color>
+    <color name="green_400">#9CCC65</color>
+    <color name="green_700">#689F38</color>
+    <color name="yellow_green">#E0DF7D</color>
+    <color name="pink_a700">#C51162</color>
+    <color name="pink_a100">#FF80AB</color>
+    <color name="icon_grey">#403f3f</color>
+    <color name="button_text_grey">#868686</color>
+    <color name="button_grey">#D9D9D9</color>
+    <color name="please_button_grey">#D9D9D9</color>
+
+
+
+
+
+</resources>

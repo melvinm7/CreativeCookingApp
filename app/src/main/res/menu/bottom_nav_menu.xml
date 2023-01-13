@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:icon="@drawable/home_icon"
+        android:id="@+id/nav_home_button"/>
+    <item android:title=""
+        android:icon="@drawable/dietary_profiles_icon"
+        android:id="@+id/nav_profiles_button"/>
+    <item android:title=""
+        android:icon="@drawable/plan_meal_icon"
+        android:id="@+id/nav_plan_button"/>
+    <item android:title=""
+        android:icon="@drawable/community_icon"
+        android:id="@+id/nav_community_button"/>
+</menu>

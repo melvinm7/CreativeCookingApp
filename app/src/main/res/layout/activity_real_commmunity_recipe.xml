@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/community_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/community_recipe_title"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/community_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_light"
+            android:text="@string/community_info_view"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="64dp"/>
+
+        <Button
+            android:id="@+id/firstCommunityRecipe"
+            android:layout_width="165dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="120dp"
+            android:gravity="bottom|center"
+            android:text="Vegan Pasta" />
+
+        <Button
+            android:id="@+id/secondCommunityRecipe"
+            android:layout_width="165dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="120dp"
+            android:gravity="bottom|center"
+            android:text="Apple Pie" />
+
+        <Button
+            android:id="@+id/thirdCommunityRecipe"
+            android:layout_width="165dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="280dp"
+            android:gravity="bottom|center"
+            android:text="Peach Crumble" />
+
+        <Button
+            android:id="@+id/fourthCommunityRecipe"
+            android:layout_width="165dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="280dp"
+            android:gravity="bottom|center"
+            android:text="Chorizo Tacos" />
+
+        <Button
+            android:id="@+id/fifthCommunityRecipe"
+            android:layout_width="165dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="440dp"
+            android:gravity="bottom|center"
+            android:text="Chicken Tikki Masala" />
+
+        <Button
+            android:id="@+id/sixthCommunityRecipe"
+            android:layout_width="165dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="440dp"
+            android:gravity="bottom|center"
+            android:text="Smash Burger" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
